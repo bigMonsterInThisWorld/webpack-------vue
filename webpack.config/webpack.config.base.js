@@ -13,6 +13,13 @@ module.exports = {
         filename: './js/[name].bundle.[hash].js',
         path: path.resolve(__dirname, '../dist'),
     },
+    resolve: {
+        alias:{
+            '@':path.resolve(__dirname,'../src'),
+            '$components' : path.resolve(__dirname,'../src/components'),
+            '$pages': path.resolve(__dirname,'../src/pages')
+        }
+    },
     devtool: 'inline-source-map',  //错误与警告追踪
     module: {
         rules: [

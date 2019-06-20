@@ -8,8 +8,8 @@
     "build": "webpack --config ./webpack.config/webpack.config.build.js",
     "watch": "webpack --config ./webpack.config/webpack.config.base.js --watch",
     "start": "webpack-dev-server  --config ./webpack.config/webpack.config.dev_server.js --open",
-    "serve":"node ./webpack.config/webpack.config.dev_middleware.js",
-    "HMR":"node ./webpack.config/webpack.config.hot_module_replacement.js"
+    "serve": "node ./webpack.config/webpack.config.dev_middleware.js",
+    "HMR": "node ./webpack.config/webpack.config.hot_module_replacement.js"
   },
   "repository": {
     "type": "git",

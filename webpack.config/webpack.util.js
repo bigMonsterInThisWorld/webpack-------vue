@@ -5,10 +5,12 @@ const path = require('path');
 let obj_;
 obj_ = {
     getPages: function () {  //获取所写的页面
-        let arr = glob.sync('./src/pages/*/js/*.js');
+        let arr = glob.sync('./src/pages/*/js/index.js');
         let pages_arr = arr.map(function (item, index) {
+            console.log(item);
             return item.split('/')[3]
         });
+        console.log(pages_arr);
         return pages_arr;
     },
 

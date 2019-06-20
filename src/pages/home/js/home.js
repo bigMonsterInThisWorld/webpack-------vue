@@ -1,4 +1,5 @@
-import my_input from '../../../components/my_input/vue/my_input.vue'
+import my_input from '$components/my_input/vue/my_input.vue'
+
 
 export default {
     data() {
@@ -14,7 +15,11 @@ export default {
         console.log('nihao ');
         // alert(123);
     }
-}
+};
+
+
+
+
 
 
 
